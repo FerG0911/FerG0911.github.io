@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #2a7330;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60%;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #0B486B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f561176c, #0B486B), url(../img/control_Z.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #f561176c, #0b486b8c), url(../img/Logo\ para\ spa\ femenino\ rosa\ y\ azul\ delicado\ \(1\).png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 00;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+       text-decoration: underline;
+}
+
+header.textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+}
+    
+.textos-header h1{
+    font-size: 40px;
+    color:#238523;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#050303;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* about us*/
+
+/*main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}*/
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenidos-textos{
+    width: 48%;
+}
+.contenidos-textos h3 span{
+    background-color: #238523;
+    color: aliceblue;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 30%;    
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenidos-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* galeria */
+
+.portafolio{
+    background: #fff;
+}
+
+.galeria-port{
+   display: flex;
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    height: 180px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: hsla(273, 91%, 27%, 0.7);
+}
+
+.hover-galeria img{
+    width: 80px;
+    border-radius: 20%;
+}
+
+.hover-galeria p{
+    color:aqua;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* clientes */ 
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.cards .card{
+    background: #71ec71;
+    display: flex;
+    width: 70%;
+    height: 200px;
+    align-items: center;
+    justify-content: space;
+    border-radius: 20px;
+}
+
+.cards .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenidos-textos-card{
+    width: 50%;
+    color: #fff;
+
+}
+
+.cards .card >.contenidos-textos-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/* our team */
+
+.about-cursos{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.cursos-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cursos-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.cursos-ind img{
+    width: 90%;
+}
+
+.cursos-ind h3{
+    margin: 30px 0;
+}
+.cursos-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    overflow: hidden;
+    margin: auto;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50%;
+    border-bottom: 1px solid #ccc;
+}
+
+.content.footer{
+    text-align: center;
+
+}
+
+.content.footer h4{
+    color: #642a73;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content.footer p{
+    color: #ccc;
+}
+.titulo-final{
+   text-align: center;
+   font-size: 24px;
+   margin: 20px 0 0 0;
+   color: #9e9797; 
+}
+
+@media screen and (max-width:900px) {
+    header {
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenidos-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+    /* galeria*/
+
+    .imagen-port{
+        width: 44%;
+    }
+    /* clientes*/
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+     /* cursos */
+
+     .cursos-cont{
+        justify-content: center;
+        flex-direction: column;
+     }
+
+     .servicio-ind{
+        width: 100%;
+        text-align: center;
+     }
+
+     .cursos-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+     }
+
+     .cursos-ind img{
+        width: 90%;
+     }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: 5px;
+        padding-right: 5px;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35%;
+    }
+
+    .textos-header h2{
+        font-size: 20px;  
+    }
+
+     /* about us*/
+
+     .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+     }
+
+     .sobre-nosotros .contenidos-textos{
+        width: 95%;
+     }
+
+     /* galeria */
+
+     .imagen-port{
+        width: 95%;
+     }
+
+     /* clients*/
+
+     .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+     }
+
+     .cards .card{
+        width: 90px;
+        height: 90px;
+     }
+
+     /*footer*/
+     .contenedor-footer{
+        flex-direction: 20px;
+        text-align: center;
+     }
+
+     .contenedor-footer{
+        margin-bottom: 20px;
+        text-align: center;
+     }
+
+     .contenedor-footer h4{
+        border: none;
+     }
+
+     .contenedor-footer h4{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+     }
+     .titulo-final{
+        font-size: 20px;
+     }
+}
